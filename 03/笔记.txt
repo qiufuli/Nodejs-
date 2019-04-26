@@ -1,0 +1,67 @@
+ajax
+fetch
+jsonp
+FormData
+webSocket
+
+-----------------------------------------------------------------
+ajax为啥不能跨域？
+SOP 同源策略
+
+ajax跨域 主要是浏览器自身安全的原因 ajax给浏览器 浏览器给服务器 服务器相应给浏览器 浏览器 SOP 是否响应
+
+ajax如何跨域——origin、access-control-allow-origin
+
+
+--------------------
+
+fetch——原生、xhr
+1.读取
+2.解析
+
+--------------------
+
+jsonp
+1.原理
+2.jQuery
+
+<script src="其他网站.js"></script>
+https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${this.value}&cb=show
+
+--------------------
+
+fetch
+
+--------------------
+
+Ajax2.0
+FormData
+
+--------------------
+
+webSocket：
+1.性能高 普通的http通信是基于字符的 websoket连接建立后是二进制的协议
+2.双向
+
+--------------------
+
+socket.io
+1.简单、方便
+2.兼容 IE5
+3.自动数据解析
+
+--------------------
+
+原生WebSocket
+
+握手
+
+ws://
+wss://
+
+--------------------
+
+key=>http的头里来
+uuid=>'258EAFA5-E914-47DA-95CA-C5AB0DC85B11'
+
+result=>base64(sha1(key+uuid))

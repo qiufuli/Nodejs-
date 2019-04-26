@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    function complete(data) {
+      alert(data.a + data.b);
+    }
+  </script>
+  <script src="js/1.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function show({ s }) {
+      console.log(s);
+    }
+
+    window.onload = function () {
+      let oTxt = document.getElementById('txt1');
+      oTxt.oninput = function () {
+        let url = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${this.value}&cb=show`;
+        let oS = document.createElement('script');
+        oS.src = url;
+
+        document.head.appendChild(oS);
+      };
+    };
+  </script>
+  <!-- <script src='js/1.js'></script> -->
+  <!-- <script src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=aaa&cb=show"></script> -->
+</head>
+
+<body>
+  <input type="text" id="txt1">
+</body>
+<script>
+</script>
+
+</html>

@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "koa": "^2.7.0"
-  }
+    "koa": "^2.7.0",
+    "multiparty": "^4.2.1"
+  },
+  "dependencies": {}
 }

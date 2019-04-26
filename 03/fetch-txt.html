@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script>
+window.onload = function(){
+  let oBtn  = document.getElementById('btn1');
+  oBtn.onclick = async function(){
+    // 1.请求
+    let res = await fetch('data/1.txt');
+    // 2.解析
+    let str = await res.text();
+    console.log('res',res);
+    console.log('str',str);
+  }
+}
+</script>
+</head>
+<body>
+  <input type="button" value="读取" id="btn1"> 
+</body>
+<script>
+</script>
+</html> 
