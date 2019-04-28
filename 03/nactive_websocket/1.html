@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script>
+  let ws = new WebSocket('ws://localhost:8080');
+
+  // 正常连接时候
+  ws.onopen = function(){
+    alert('连接建立')
+  }
+  // 接受信息事件
+  ws.onmessage = function(){}
+  //正常关闭事件
+  ws.onclose = function(){}
+  //错误事件
+  ws.onerror = function(){}
+</script>
+</head>
+<body>
+</body>
+</html>

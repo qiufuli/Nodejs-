@@ -54,7 +54,7 @@ socket.io
 
 原生WebSocket
 
-握手
+握手 TCP三次握手
 
 ws://
 wss://
