@@ -73,10 +73,10 @@ cluster.fork()
 post：body-parser
 文件：multer
 cookie：存储在浏览器，请求服务器的时候，会顺便发给服务器
-  不安全的
+  不安全的 (任何存储在浏览器端的数据都是可以修改的)
 
-session：存储在服务器，不是独立的，基于cookie
-  安全问题：session劫持
+session：存储在服务器，不是独立的，是基于cookie
+  安全问题：session劫持  
 
   （存在cookie里的session-ID）->token
 
