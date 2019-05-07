@@ -14,7 +14,7 @@ console.log(`server running at ${config.PORT}`);
 
 //中间件 koa-better-body
 server.use(body({
-  uploadDir: path.resolve(__dirname,'./static/upload')
+  uploadDir: config.UPLOAD_DIR
 }));
 
 //中间件 session 需要配置key 
